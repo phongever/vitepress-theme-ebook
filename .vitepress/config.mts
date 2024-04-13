@@ -3,7 +3,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "Vitepress theme book",
   description: "Vitepress theme for book",
-  srcDir: "src/pages",
+  srcDir: "src",
   head: [
     ["link", { rel: "preconnect", href: "https://fonts.googleapis.com" }],
     [

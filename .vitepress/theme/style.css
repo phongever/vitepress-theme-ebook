@@ -1,3 +1,19 @@
 @tailwind base;
+
+@layer base {
+  * {
+    @apply font-serif;
+  }
+
+  h1 {
+    @apply text-center;
+  }
+
+  p {
+    &::first-line {
+    }
+  }
+}
+
 @tailwind components;
 @tailwind utilities;
