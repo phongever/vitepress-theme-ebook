@@ -1,7 +1,8 @@
 <template>
-  <h1>{{ data.title }}</h1>
-  <h2>{{ data.author }}</h2>
+  <h1>{{ title }}</h1>
+  <h2>{{ author }}</h2>
 </template>
-<script setup>
-import { data } from "../data/home.data.ts"
+<script lang="ts" setup>
+
+const props = defineProps(["title", "author"])
 </script>

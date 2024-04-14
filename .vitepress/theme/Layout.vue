@@ -4,15 +4,16 @@
       <div
         class="paper max-w-screen-md min-h-screen bg-white mx-auto border border-slate-500 shadow-xl shadow-gray-500 py-10 px-8 md:py-20 md:px-16">
         <NotFound v-if="page.isNotFound" />
-        <Home v-if="frontmatter.layout === 'home'" />
+        <Home v-if="frontmatter.layout === 'home'" v-bind="homeData" />
         <ToC v-if="frontmatter.layout === 'toc'" />
         <Page v-else />
       </div>
     </div>
   </div>
 </template>
-<script setup>
+<script lang="ts" setup>
 import { useData } from 'vitepress'
+import { data as homeData } from "./data/home.data"
 import NotFound from './components/NotFound.vue';
 import Home from './components/Home.vue';
 import ToC from "./components/ToC.vue"
