@@ -1,4 +1,4 @@
 <template>
-  <h1>404</h1>
-  <p class="text-center">🙈</p>
+  <h1 class="text-center">🙈</h1>
+  <h2>404</h2>
 </template>
