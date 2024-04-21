@@ -1,10 +1,14 @@
 <template>
-  <nav class="flex justify-between">
-    <a :href="preUrl">&lt; Previous chapter</a>
-    <span>|</span>
-    <a href="./toc">Table of content</a>
-    <span>|</span>
-    <a :href="nextUrl">Next chapter &gt; </a>
+  <nav class="grid grid-cols-3">
+    <div>
+      <a :href="preUrl" v-if="preUrl">Previous chapter</a>
+    </div>
+    <div class="text-center">
+      <a href="/toc">Table of content</a>
+    </div>
+    <div class="text-right">
+      <a :href="nextUrl" v-if="nextUrl">Next chapter</a>
+    </div>
   </nav>
 </template>
 
