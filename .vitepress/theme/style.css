@@ -6,11 +6,26 @@
   }
 
   h1 {
-    @apply text-center;
+    @apply text-center text-3xl font-bold my-8;
+  }
+
+  h2 {
+    @apply text-center text-2xl my-6;
+  }
+
+  a {
+    @apply underline underline-offset-2 text-blue-950;
   }
 
   p {
-    &::first-line {
+    @apply indent-10 my-5 first-of-type:first-letter:text-4xl first-of-type:first-letter:font-bold;
+  }
+
+  ul {
+    @apply max-w-fit mx-auto;
+
+    & li {
+      @apply my-2;
     }
   }
 }

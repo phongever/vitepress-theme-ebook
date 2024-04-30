@@ -1,6 +1,6 @@
 <template>
-  <h1>{{ title }}</h1>
-  <h2 class="text-center">{{ author }}</h2>
+  <h1 class="text-5xl">{{ title }}</h1>
+  <h2>{{ author }}</h2>
 </template>
 
 <script lang="ts" setup>
