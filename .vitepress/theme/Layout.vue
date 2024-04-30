@@ -43,8 +43,8 @@ const preNextUrl: ComputedRef<{
       <div
         class="paper min-h-screen bg-white border border-slate-500 shadow-xl shadow-gray-500 py-10 px-8 md:py-20 md:px-16 my-4">
         <NotFound v-if="page.isNotFound" />
-        <Home v-if="frontmatter.layout === LAYOUT.HOME" v-bind="homeData" />
-        <ToC v-if="frontmatter.layout === LAYOUT.TOC" :chapters="chaptersData" />
+        <Home v-else-if="frontmatter.layout === LAYOUT.HOME" v-bind="homeData" />
+        <ToC v-else-if="frontmatter.layout === LAYOUT.TOC" :chapters="chaptersData" />
         <Chapter v-else :title="frontmatter.title" />
       </div>
       <Navbar v-bind="preNextUrl" />
