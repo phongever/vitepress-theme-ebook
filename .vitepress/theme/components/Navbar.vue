@@ -13,8 +13,8 @@
 </template>
 
 <script lang="ts" setup>
-const props = defineProps({
-  preUrl: String,
-  nextUrl: String,
-})
+const props = defineProps<{
+  preUrl: string,
+  nextUrl: string,
+}>()
 </script>
